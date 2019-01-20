@@ -23,7 +23,7 @@ Run the following commands in sequence :
 
 
 ## How would you improve your deployment process if you needed to maintain this application long term?
-To ease continuous enhancements and deployments for the application, CI/CD pipeline can be enabled. The deployment pipeline would function like the following:
+To make it easy to continuously enhance and deploy the application, CI/CD pipeline can be enabled. The deployment pipeline would function like the following:
 1) There will be an Orchestration service, which would be used to reserve resources for any new application based on the configuration provided to it. The configuration will be present in the Git project itself.
    The Orchestration service will take the git url for the project and necessary credentials to pull the configuration and prepare the infrastructure accordingly. Internally, Orchestration service can make
    use of the Marathon/Mesos as resource negotiator for the underlying cloud containers. Marathon also provides easy way to scale up/down the containers for application.
