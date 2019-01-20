@@ -2,8 +2,10 @@
 
 ## How to run docker image
 Run the following commands in sequence :
-1) docker build -t paxos .
-2) docker run -p 8080:8080 --name messagestore paxos
+1) Make sure maven is installed.
+2) Run the command: mvn clean package . This runs all integration and unit tests too.
+3) docker build -t paxos .
+4) docker run -p 8080:8080 --name messagestore paxos
 
 ## How to build and run application without Docker
 1) Make sure maven is installed.
